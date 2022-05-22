@@ -1,0 +1,28 @@
+<h1><%= gettext "show sampletag" %></h1>
+
+<ul>
+
+  <li>
+    <strong><%= gettext "Name" %>:</strong>
+    <%= @sampletag.tagname %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Samples" %>:</strong>
+    <ul>
+      <%= for sample <- @sampletag.sample do %>
+    <li>
+      <%= sample.name %>
+    </li>
+      <%= end %>
+    </ul>
+</li>
+
+</ul>
+<%= if @current_user do %>
+  <%= if @current_user.role == "Admin" do %>
+  <span><%= link gettext("Edit"), to: Routes.sampletag_path(@conn, :edit, @sampletag) %></span>
+ <% end %>
+<% end %>
+
+<span><%= link gettext("Back"), to: Routes.sampletag_path(@conn, :index) %></span>

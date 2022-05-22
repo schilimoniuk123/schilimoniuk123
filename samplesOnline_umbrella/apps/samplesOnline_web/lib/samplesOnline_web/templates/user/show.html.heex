@@ -1,0 +1,14 @@
+<h1><%= gettext "Show user details" %></h1>
+<ul>
+    <li>
+        <strong><%= gettext "Username" %>:</strong>
+        <%= @user.username %>
+    </li>
+
+    <li>
+        <strong><%= gettext "Role" %>:</strong>
+        <%= @user.role %>
+    </li>
+</ul>
+
+<%= link gettext("Back"), to: Routes.user_path(@conn, :index) %>

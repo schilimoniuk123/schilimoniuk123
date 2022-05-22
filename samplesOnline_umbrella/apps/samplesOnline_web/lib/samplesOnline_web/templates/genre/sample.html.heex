@@ -1,0 +1,30 @@
+<div>
+    <h1><%= gettext "Samples" %></h1>
+      <table>
+          <thead>
+            <tr>
+              <th><%= gettext "Name" %></th>
+              <th><%= gettext "BPM" %></th>
+              <th><%= gettext "Duration" %></th>
+              
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= if @category do %>
+              <%= for sample <- @category.sample do %>
+                <tr>
+                    <td><%= sample.name %></td>
+                    <td><%= sample.bpm %></td>
+                    <td><%= sample.duration %></td>
+                </tr>
+              <% end %>
+            <%= else %>
+              <p style="color: red;"><%= gettext "Nothing found" %></p>
+            <% end %>
+          </tbody>
+        </table>
+  
+        <button style="background-color: darkred;"><a href="/.." style="color: white;"><%= gettext "Home" %></a></button>
+  
+  </div>

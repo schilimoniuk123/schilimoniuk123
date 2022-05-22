@@ -1,0 +1,28 @@
+<section class="phx-hero">
+  <%= if @current_user do %>
+  <h1><%= gettext "Welcome %{name}!", name: @current_user.username %></h1>
+
+  <p>
+    <%= gettext "You are cerrently logged in as a %{role}", role: @current_user.role %>
+  </p>
+  <% end %>
+
+<%= if @current_user do %>
+  <button><a href="/samples" style="color: white;" class="btn btn-primary"><%= gettext "All samples" %></a></button>
+  <button><a href="/genres" style="color: white;" class="btn btn-primary"><%= gettext "Genres" %></a></button>
+  <button><a href="/sampletags" style="color: white;" class="btn btn-primary"><%= gettext "sampletags" %></a></button>
+  <button><a href="/categories" style="color: white;" class="btn btn-primary"><%= gettext "Categories" %></a></button>
+<% else %>
+  <p><%= gettext "Please sign in to be able to search through all the samples" %></p>
+  <% end %>
+</section>
+<br>
+
+ <%= if @current_user do %>
+    <%= if @current_user.role == "Admin" do %>
+      <section class="phx-hero">
+        <h1><%= gettext "Admin tools" %></h1>
+          <button><a href="/admin/users" style="color: white;" class="btn btn-primary"><%= gettext "Users" %></a></button>
+      </section>
+    <% end %>
+  <% end %>

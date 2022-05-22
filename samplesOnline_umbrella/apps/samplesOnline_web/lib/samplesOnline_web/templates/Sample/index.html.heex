@@ -1,0 +1,50 @@
+<div>
+    <form style="display:flex; justify-content: space-around;">
+        <input style="width: 80%;" type="text" name="sample_name" id="Sample" placeholder={gettext "search for samples"}>
+        <button><a  style="color: white;" class="btn btn-primary" type="submit" formmethod="get"><%= gettext "Search" %></a></button>
+    </form>
+    <table>
+        <thead>
+          <tr>
+            <th><%= gettext "Name" %></th>
+            <th><%= gettext "BPM" %></th>
+            <th><%= gettext "Duration" %></th>
+            <th><%= gettext "Category" %></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <%= if @samples do %>
+            <%= for sample <- @samples do %>
+                <tr>
+                  <td><%= sample.name %></td>
+                  <td><%= sample.bpm %></td>
+                  <td><%= sample.duration %></td> 
+                  <td><%= sample.category.name %></td>
+                  <td>
+                    <span><%= link gettext("Show"), to: Routes.sample_path(@conn, :show, sample) %></span>
+                    <%= if @current_user do %>
+                      <%= if @current_user.role == "Admin" do %>
+                        |<span><%= link gettext("Edit"), to: Routes.sample_path(@conn, :edit, sample) %></span>|
+                        <span><%= link gettext("Delete"), to: Routes.sample_path(@conn, :delete, sample), method: :delete, data: [confirm: gettext("Are you sure?")] %></span>|
+                        <span><%= link gettext("add sampletags"), to: Routes.sample_path(@conn, :loadSampletags, sample) %></span>
+                      <% end %>
+                    <% end %>
+                  </td>
+                </tr>
+
+                
+            <% end %>
+          <%= else %>
+            <p style="color: red;">nothing found</p>
+          <% end %>
+        </tbody>
+      </table>
+
+      <button style="background-color: darkred;"><a href="/.." style="color: white;"><%= gettext "Home" %></a></button>
+      <%= if @current_user do %>
+        <%= if @current_user.role == "Admin" do %>
+          <button><a href="samples/new" style="color: white;"><%= gettext "Create" %></a></button>
+        <% end %>
+      <% end %>
+</div>

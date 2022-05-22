@@ -1,0 +1,5 @@
+<h1><%= gettext "Edit sample" %></h1>
+
+<%= render "form.html", Map.put(assigns, :action, Routes.sample_path(@conn, :update, @sample)) %>
+
+<span><%= link gettext("Back"), to: Routes.sample_path(@conn, :index) %></span>

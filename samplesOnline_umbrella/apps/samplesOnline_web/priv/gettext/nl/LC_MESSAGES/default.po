@@ -1,0 +1,386 @@
+## "msgid"s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove "msgid"s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use "mix gettext.extract --merge" or "mix gettext.merge"
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: nl\n"
+"Plural-Forms: nplurals=2\n"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/page/index.html.heex:6
+msgid "Welcome to the world of %{language} and %{framework}!"
+msgstr "Welkom op de wereld van %{language} en %{framework}!"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/page/index.html.heex:9
+msgid "All samples"
+msgstr "Alle samples"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/index.html.heex:2
+#: lib/samplesOnline_web/templates/page/index.html.heex:10
+msgid "Genres"
+msgstr "Genres"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/sample.html.heex:7
+#: lib/samplesOnline_web/templates/sample/index.html.heex:10
+#: lib/samplesOnline_web/templates/sample/show.html.heex:9
+msgid "BPM"
+msgstr "BPM"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:38
+#: lib/samplesOnline_web/templates/genre/index.html.heex:37
+#: lib/samplesOnline_web/templates/sample/index.html.heex:47
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:38
+#: lib/samplesOnline_web/templates/user/index.html.heex:34
+msgid "Create"
+msgstr "Nieuw"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/sample.html.heex:8
+#: lib/samplesOnline_web/templates/sample/index.html.heex:11
+#: lib/samplesOnline_web/templates/sample/show.html.heex:13
+msgid "Duration"
+msgstr "Duur"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:34
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:36
+#: lib/samplesOnline_web/templates/genre/category.html.heex:24
+#: lib/samplesOnline_web/templates/genre/index.html.heex:36
+#: lib/samplesOnline_web/templates/genre/sample.html.heex:32
+#: lib/samplesOnline_web/templates/sample/index.html.heex:44
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:34
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:34
+#: lib/samplesOnline_web/templates/user/index.html.heex:38
+msgid "Home"
+msgstr "Thuis"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:9
+#: lib/samplesOnline_web/templates/category/show.html.heex:6
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:9
+#: lib/samplesOnline_web/templates/genre/category.html.heex:6
+#: lib/samplesOnline_web/templates/genre/index.html.heex:6
+#: lib/samplesOnline_web/templates/genre/sample.html.heex:6
+#: lib/samplesOnline_web/templates/genre/show.html.heex:6
+#: lib/samplesOnline_web/templates/sample/index.html.heex:9
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:9
+#: lib/samplesOnline_web/templates/sample/show.html.heex:5
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:9
+#: lib/samplesOnline_web/templates/sampletag/show.html.heex:6
+msgid "Name"
+msgstr "Naam"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:4
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:4
+#: lib/samplesOnline_web/templates/sample/index.html.heex:4
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:4
+msgid "Search"
+msgstr "Zoeken"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sample/index.html.heex:3
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:3
+msgid "search for samples"
+msgstr "Zoeken voor samples"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/layout/root.html.heex:30
+msgid "Login"
+msgstr "Inloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/layout/root.html.heex:28
+msgid "Logout"
+msgstr "Uitloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/category.html.heex:2
+#: lib/samplesOnline_web/templates/page/index.html.heex:12
+msgid "Categories"
+msgstr "categoriën"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/edit.html.heex:1
+msgid "Edit Genre"
+msgstr "Genre aanpassen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/edit.html.heex:1
+msgid "Edit category"
+msgstr "Categorie aanpassen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sample/edit.html.heex:1
+msgid "Edit sample"
+msgstr "Sample aanpassen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sampletag/edit.html.heex:1
+msgid "Edit sampletag"
+msgstr "sampletag aanpassen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/session/new.html.heex:1
+msgid "Login page"
+msgstr "Inloggen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/new.html.heex:1
+msgid "New category"
+msgstr "Nieuwe categorie"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/new.html.heex:1
+msgid "New genre"
+msgstr "Nieuwe genre"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sample/new.html.heex:1
+msgid "New sample"
+msgstr "Nieuwe sample"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sampletag/new.html.heex:1
+msgid "New sampletag"
+msgstr "Nieuwe sampletag"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:30
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:31
+#: lib/samplesOnline_web/templates/genre/category.html.heex:19
+#: lib/samplesOnline_web/templates/genre/index.html.heex:31
+#: lib/samplesOnline_web/templates/genre/sample.html.heex:27
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:29
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:29
+msgid "Nothing found"
+msgstr "Niets gevonden"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/form.html.heex:4
+msgid "Oops something went wrong, check below!"
+msgstr "Er is iets mis gegaan, kijk hieronder!"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/form.html.heex:4
+#: lib/samplesOnline_web/templates/sample/form.html.heex:4
+#: lib/samplesOnline_web/templates/sampletag/form.html.heex:4
+#: lib/samplesOnline_web/templates/user/form.html.heex:4
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "Er is iets mis gegaan, kijk hieronder!"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/sample.html.heex:2
+#: lib/samplesOnline_web/templates/sampletag/show.html.heex:11
+msgid "Samples"
+msgstr "Samples"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/show.html.heex:1
+msgid "Show genre"
+msgstr "Genre details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sample/show.html.heex:1
+msgid "Show sample"
+msgstr "Sample details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:3
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:3
+msgid "search for categories"
+msgstr "zoeken in categoriën"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sampletag/show.html.heex:1
+msgid "show sampletag"
+msgstr "Sampletag details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/page/index.html.heex:22
+msgid "Admin tools"
+msgstr "Administratie hulpmiddelen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/user/edit.html.heex:1
+msgid "Edit user"
+msgstr "Bebruiker aanpassen"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/layout/root.html.heex:18
+msgid "Language"
+msgstr "Taal"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/user/index.html.heex:1
+msgid "Listing users"
+msgstr "Gebruikeslijst"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/user/new.html.heex:1
+msgid "New user"
+msgstr "Nieuwe gebruiker"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/user/index.html.heex:7
+#: lib/samplesOnline_web/templates/user/show.html.heex:9
+msgid "Role"
+msgstr "Rol"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/user/show.html.heex:1
+msgid "Show user details"
+msgstr "Gebruikers details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/user/index.html.heex:6
+#: lib/samplesOnline_web/templates/user/show.html.heex:4
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/page/index.html.heex:23
+msgid "Users"
+msgstr "Gebruiker"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/page/index.html.heex:11
+msgid "sampletags"
+msgstr "Sampletag details"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/sample/index.html.heex:12
+msgid "Category"
+msgstr "categoriën"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/show.html.heex:1
+msgid "category details"
+msgstr "categorie details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/edit.html.heex:5
+#: lib/samplesOnline_web/templates/category/new.html.heex:5
+#: lib/samplesOnline_web/templates/category/show.html.heex:28
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:37
+#: lib/samplesOnline_web/templates/genre/edit.html.heex:5
+#: lib/samplesOnline_web/templates/genre/new.html.heex:5
+#: lib/samplesOnline_web/templates/genre/show.html.heex:17
+#: lib/samplesOnline_web/templates/sample/edit.html.heex:5
+#: lib/samplesOnline_web/templates/sample/new.html.heex:5
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:35
+#: lib/samplesOnline_web/templates/sample/show.html.heex:30
+#: lib/samplesOnline_web/templates/sampletag/edit.html.heex:5
+#: lib/samplesOnline_web/templates/sampletag/new.html.heex:5
+#: lib/samplesOnline_web/templates/sampletag/show.html.heex:28
+#: lib/samplesOnline_web/templates/user/edit.html.heex:5
+#: lib/samplesOnline_web/templates/user/new.html.heex:6
+#: lib/samplesOnline_web/templates/user/show.html.heex:14
+msgid "Back"
+msgstr "Terug"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:23
+#: lib/samplesOnline_web/templates/genre/index.html.heex:21
+#: lib/samplesOnline_web/templates/sample/index.html.heex:29
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:22
+#: lib/samplesOnline_web/templates/user/index.html.heex:21
+msgid "Are you sure?"
+msgstr "Bent u zeker?"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:23
+#: lib/samplesOnline_web/templates/genre/index.html.heex:21
+#: lib/samplesOnline_web/templates/sample/index.html.heex:29
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:22
+#: lib/samplesOnline_web/templates/user/index.html.heex:21
+msgid "Delete"
+msgstr "Verwijderen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/category/index.html.heex:22
+#: lib/samplesOnline_web/templates/category/show.html.heex:24
+#: lib/samplesOnline_web/templates/genre/index.html.heex:20
+#: lib/samplesOnline_web/templates/genre/show.html.heex:13
+#: lib/samplesOnline_web/templates/sample/index.html.heex:28
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:21
+#: lib/samplesOnline_web/templates/sampletag/show.html.heex:24
+#: lib/samplesOnline_web/templates/user/index.html.heex:20
+msgid "Edit"
+msgstr "Aanpassen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/category/show.html.heex:11
+msgid "Sample"
+msgstr "Samples"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/form.html.heex:12
+#: lib/samplesOnline_web/templates/genre/form.html.heex:12
+#: lib/samplesOnline_web/templates/sample/form.html.heex:28
+#: lib/samplesOnline_web/templates/sampletag/form.html.heex:13
+#: lib/samplesOnline_web/templates/user/form.html.heex:23
+msgid "Save"
+msgstr "Opslaan"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/category/index.html.heex:19
+#: lib/samplesOnline_web/templates/sample/index.html.heex:25
+#: lib/samplesOnline_web/templates/sampletag/index.html.heex:18
+#: lib/samplesOnline_web/templates/user/index.html.heex:17
+msgid "Show"
+msgstr "details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/layout/root.html.heex:20
+msgid "LiveDashboard"
+msgstr "Live Dashboard"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/session/new.html.heex:18
+msgid "Submit"
+msgstr "indienen"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/sample/index.html.heex:30
+msgid "add sampletags"
+msgstr "Sampletag details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/sample/sampletags.html.heex:22
+msgid "add to sample"
+msgstr "toevoegen aan sample"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/sample/show.html.heex:18
+msgid "Sampletags"
+msgstr "Sampletag details"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/page/index.html.heex:14
+msgid "Please sign in to be able to search through all the samples"
+msgstr "Log in om kennis te maken met de collectie van de samples"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/page/index.html.heex:3
+msgid "Welcome %{name}!"
+msgstr "Welkom %{name}!"
+
+#, elixir-autogen, elixir-format, fuzzy
+#: lib/samplesOnline_web/templates/genre/index.html.heex:22
+msgid "add categories"
+msgstr "categoriën"
+
+#, elixir-autogen, elixir-format
+#: lib/samplesOnline_web/templates/genre/categories.html.heex:22
+msgid "add to genre"
+msgstr "toevoegen aan genre"

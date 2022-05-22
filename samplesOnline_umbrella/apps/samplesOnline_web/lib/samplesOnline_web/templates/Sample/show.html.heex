@@ -1,0 +1,30 @@
+<h1><%= gettext "Show sample" %></h1>
+
+<ul>
+  <li>
+    <strong><%= gettext "Name" %>:</strong>
+    <%= @sample.name %>
+  </li>
+  <li>
+    <strong><%= gettext "BPM" %>:</strong>
+    <%= @sample.bpm %>
+  </li>
+  <li>
+    <strong><%= gettext "Duration" %>:</strong>
+    <%= @sample.duration %>
+  </li>
+
+  <li>
+      <strong><%= gettext "Sampletags" %>:</strong>
+      <ul>
+        <%= for sampletag <- @sample.sampletag do %>
+      <li>
+        <%= sampletag.tagname %>
+      </li>
+        <%= end %>
+      </ul>
+  </li>
+
+
+</ul>
+<span><%= link gettext("Back"), to: Routes.sample_path(@conn, :index) %></span>

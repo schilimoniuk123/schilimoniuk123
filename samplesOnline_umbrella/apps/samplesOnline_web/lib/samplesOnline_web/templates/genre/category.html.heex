@@ -1,0 +1,26 @@
+<div>
+    <h1><%= gettext "Categories" %></h1>
+      <table>
+          <thead>
+            <tr>
+              <th><%= gettext "Name" %></th>
+        
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= if @genre do %>
+              <%= for category <- @genre.category do %>
+                <tr>
+                  <td><a style="cursor: pointer;" href={"/genres?categoryid=#{category.id}"}><%= category.name %></a></td>
+                </tr>
+              <% end %>
+            <%= else %>
+              <p style="color: red;"><%= gettext "Nothing found" %></p>
+            <% end %>
+          </tbody>
+        </table>
+  
+        <button style="background-color: darkred;"><a href="/.." style="color: white;"><%= gettext "Home" %></a></button>
+  
+  </div>

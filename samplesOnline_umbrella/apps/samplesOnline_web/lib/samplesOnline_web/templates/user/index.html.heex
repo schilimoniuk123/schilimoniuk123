@@ -1,0 +1,41 @@
+<h1><%= gettext "Listing users" %></h1>
+
+<table>
+    <thead>
+        <tr>
+            <th><%= gettext "Username" %></th>
+            <th><%= gettext "Role" %></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <%= for user <- @users do %>
+        <tr>
+            <td><%= user.username %></td>
+            <td><%= user.role %></td>
+            <td>
+                <span><%= link gettext("Show"), to: Routes.user_path(@conn, :show, user) %></span>
+                <%= if @current_user do %>
+                <%= if @current_user.role == "Admin" do %>
+                <span><%= link gettext("Edit"), to: Routes.user_path(@conn, :edit, user) %></span>
+                <span><%= link gettext("Delete"), to: Routes.user_path(@conn, :delete, user), method: :delete, data: [confirm: gettext("Are you sure?")] %></span>
+                 <% end %>
+               <% end %>
+
+            </td>
+        </tr>
+        <% end %>
+    </tbody>
+</table>
+
+<%= if @current_user do %>
+    <%= if @current_user.role == "Admin" do %>
+
+        <button><a href="users/new" style="color: white;"><%= gettext "Create" %></a></button>
+    <% end %>
+<% end %>
+
+<button style="background-color: darkred;"><a href="/../.." style="color: white;"><%= gettext "Home" %></a></button>
+
+
+
